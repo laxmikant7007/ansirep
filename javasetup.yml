@@ -2,6 +2,4 @@
 - hosts: webserverhost
   become: yes
   roles:
-        - { role: javarole , when: ansible_os_family=="Debian"}
-        - { role: javarole , when: ansible_os_family=="RedHat"}
-    
+        - { role: javarole }
