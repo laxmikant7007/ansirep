@@ -2,12 +2,12 @@
 # tasks file for javarole
 - name: i want to install java 8 on ubuntu
   apt: 
-         name: "{{javapackageforubuntu}}"
+         name: "{{javapackforubuntu}}"
          state: present 
   When : ansible_os_family=="Debian"
 
 - name: i want to install java 8 on Redhat
   yum:
-          name: "{{javapackageforredhat}}"
+          name: "{{javapackforredhat}}"
           state: present
   When : ansible_os_family=="RedHat"
