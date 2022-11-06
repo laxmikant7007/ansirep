@@ -8,6 +8,6 @@
 
 - name: i want to install java 8 on Redhat
   yum:
-          name: "{{java-1.8.0-openjdk}}"
+          name: "{{javapackageforredhat}}"
           state: present
   When : ansible_os_family=="RedHat"
